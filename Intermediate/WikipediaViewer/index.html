@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Wikipedia Viewer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.bootcss.com/flat-ui/2.3.0/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.bootcss.com/flat-ui/2.3.0/css/flat-ui.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="master.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <!-- 搜索栏 -->
+    <div class="search-box row">
+      <div class="col-sm-4 col-sm-offset-3">
+        <div class="form-group">
+          <div class="input-group input-group-hg input-group-rounded">
+            <span class="input-group-btn">
+            <button type="submit" class="btn" id="btn-search"><span class="fui-search"></span></button>
+            </span>
+            <input type="text" class="form-control" id="input-search" placeholder="Search" id="search-query-2">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <a href="http://en.wikipedia.org/wiki/Special:Random" target="_blank" class="btn btn-primary btn-block" id="btn-random">Random</a>
+      </div>
+    </div>
+
+    <!-- 搜索结果显示 -->
+    <div class="show row"></div>
+  </div>
+
+  <script src="https://cdn.bootcss.com/flat-ui/2.3.0/js/vendor/jquery.min.js"></script>
+  <script src="base.js"></script>
+</body>
+
+</html>

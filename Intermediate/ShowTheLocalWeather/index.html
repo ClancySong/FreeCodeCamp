@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Show the Local Weather</title>
+  <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./master.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- LOGO -->
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <div class="logo">
+          <h1 class="text-center">Show The Local Weather</h1>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- INPUT -->
+    <div class="input row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <div class="input-group">
+          <input type="text" class="form-control" id="input-cityname" placeholder="请输入城市名称，如北京、上海等">
+          <span class="input-group-btn">
+            <button class="btn btn-primary" id="btn-getinfo">看一下！</button>
+          </span>
+        </div>
+        <div class="alert alert-info">
+          注意：如果无法获取天气数据，请在浏览器中设置允许加载不安全的脚本。
+        </div>
+      </div>
+    </div>
+
+    <!-- SHOW -->
+    <div class="show">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+          <table class="table table-responsive table-hover table-striped text-center">
+            <tbody>
+              <tr>
+                <td>城市</td>
+                <td id="city"></td>
+              </tr>
+              <tr>
+                <td>日期</td>
+                <td id="date_y"></td>
+              </tr>
+              <tr>
+                <td>更新时间</td>
+                <td id="time"></td>
+              </tr>
+              <tr>
+                <td>温度</td>
+                <td id="temperature"></td>
+              </tr>
+              <tr>
+                <td>天气</td>
+                <td id="weather"></td>
+              </tr>
+              <tr>
+                <td>风向</td>
+                <td id="wind"></td>
+              </tr>
+              <tr>
+                <td>穿衣建议</td>
+                <td id="dressing_advice"></td>
+              </tr>
+              <tr>
+                <td>紫外线指数</td>
+                <td id="uv_index"></td>
+              </tr>
+              <tr>
+                <td>出行指数</td>
+                <td id="travel_index"></td>
+              </tr>
+              <tr>
+                <td>运动指数</td>
+                <td id="exercise_index"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/jQuery-JSONP/2.4.0/jquery.jsonp.min.js"></script>
+    <script src="base.js"></script>
+</body>
+
+</html>

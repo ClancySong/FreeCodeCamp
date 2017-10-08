@@ -1,0 +1,43 @@
+.search-box {
+  margin: 200px auto 40px;
+}
+
+#btn-random {
+  font-size: 20px;
+  height: 53px;
+  border-radius: 25px;
+  background: #FFF;
+  border: solid 2px #1ABC9C;
+  color: #1ABC9C;
+}
+
+#btn-random:hover {
+  background-color: #1ABC9C;
+  color: #FFF;
+}
+
+.show {
+  margin: auto 40px;
+}
+
+.res-box {
+  margin-bottom: 12px;
+  border: solid 2px #1ABC9C;
+  color: #000;
+  border-radius: 12px;
+  padding: 0 40px;
+  display: block;
+}
+
+.res-box:hover {
+  background: #1ABC9C;
+  color: #FFF;
+}
+
+.res-box h4 {
+  font-size: 20px;
+}
+
+.res-box p {
+  font-size: 14px;
+}

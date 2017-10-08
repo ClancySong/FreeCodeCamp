@@ -1,0 +1,39 @@
+body {
+  background: #e5e9ea;
+}
+
+.header {
+  margin: 40px auto;
+}
+
+.header .navbar {
+  background: #ffffff;
+}
+
+.header .logo {
+  margin: 20px;
+}
+
+.header .nav {
+  margin: 10px;
+}
+
+.show {
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 12px 32px;
+}
+
+.show-box img {
+  width: 64px;
+  height: 64px;
+  margin: 20px 40px 20px 0;
+}
+
+.show-box a {
+  color: #34495e;
+}
+
+.show-box .label {
+  margin-left: 16px;
+}
