@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #33CCCC;
+    color: #FFF;
+    font-family: 微软雅黑;
+    height: 100%;
+}
+
+.title {
+    text-align: center;
+    font-family: 黑体;
+    font-size: 48px;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+}
+
+.clock {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.clock .time-show {
+    font-size: 72px;
+    font-weight: 200;
+    width: 300px;
+    height: 300px;
+    border: solid 2px #FFF;
+    border-radius: 50%;
+    position: relative;
+    line-height: 300px;
+    text-align: center;
+}
+
+button {
+    border: none;
+    background: no-repeat;
+    color: #FFF;
+    outline: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.time-set {
+    text-align: center;
+    font-size: 48px;
+    margin-top: 24px;
+}
+
+.time-set #up {
+    margin-left: 32px;
+}
+
+.time-set #down {
+    margin-right: 32px;
+}
+
+.time-ctrl {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 24px;
+}
+
+.time-ctrl #rest {
+    margin-right: 64px;
+}
+
+.time-ctrl #start {
+    margin-left: 64px;
+}
+
