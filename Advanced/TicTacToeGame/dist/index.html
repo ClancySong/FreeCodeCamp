@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe Game</title>
+    <link href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title" id="title">Please pick your chess piece</h1>
+        <div class="selector">
+            <button class="btn" id="circle">
+                <i class="fa fa-circle-o"></i>
+            </button>
+            <button class="btn" id="cross">
+                <i class="fa fa-close"></i>
+            </button>
+        </div>
+        <table class="checkerboard">
+            <tr class="first-row">
+                <td class="checker-left">
+                    <button class="checker" id="checker-0-0">
+                        <i class="fa"></i>
+                    </button>
+                </td>
+                <td>
+                    <button class="checker" id="checker-0-1">
+                        <i class="fa"></i>
+                    </button>
+                </td>
+                <td class="checker-right">
+                    <button class="checker" id="checker-0-2">
+                        <i class="fa"></i>
+                    </button>
+                </td>
+            </tr>
+            <tr class="second-row">
+                <td class="checker-left">
+                    <button class="checker" id="checker-1-0">
+                        <i class="fa"></i>
+                    </button>
+                </td>
+                <td>
+                    <button class="checker" id="checker-1-1">
+                        <i class="fa"></i>
+                    </button>
+                </td>
+                <td class="checker-right">
+                    <button class="checker" id="checker-1-2">
+                        <i class="fa"></i>
+                    </button>
+                </td>
+            </tr>
+            <tr class="third-row">
+                <td class="checker-left">
+                    <button class="checker" id="checker-2-0">
+                        <i class="fa"></i>
+                    </button>
+                </td>
+                <td>
+                    <button class="checker" id="checker-2-1">
+                        <i class="fa"></i>
+                    </button>
+                </td>
+                <td class="checker-right">
+                    <button class="checker" id="checker-2-2">
+                        <i class="fa"></i>
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <script src="js/bundle.js"></script>
+</body>
+
+</html>
