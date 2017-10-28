@@ -1,0 +1,103 @@
+@mixin createTestBorder() {
+    border: solid 1px black;
+}
+
+@mixin setSquare($width) {
+    width: $width;
+    height: $width;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffffff;
+}
+
+.container {
+    $main-color: #CC99CC;
+    $background-color: #FFFFFF;
+    $checkerboard-width: 480px;
+    text-align: center;
+    font-size: 16px;
+    .title {
+        color: $main-color;
+        font-size: 2.4em;
+    }
+    .selector {
+        margin: 1em;
+        .btn {
+            color: $main-color;
+            background: $background-color;
+            border: none;
+            @include setSquare(100px);
+            font-size: 2em;
+            outline: none;
+            &:hover {
+                background: $main-color;
+                color: $background-color;
+            }
+            &:active {
+                background: $background-color;
+                color: $main-color;
+            }
+        }
+        .btn-active {
+            background: $background-color;
+            color: $main-color;
+            border: solid 2px $main-color;
+        }
+    }
+    .checkerboard {
+        @include setSquare($checkerboard-width);
+        margin: auto;
+        border-spacing: 0;
+        .checker {
+            @include setSquare($checkerboard-width / 3);
+            font-size: 2.4em;
+            background: $background-color;
+            outline: none;
+            border: none;
+            margin: 0;
+            &:hover {
+                background: $main-color;
+                color: $background-color;
+            }
+            &:active {
+                background: $background-color;
+                color: $main-color;
+            }
+        }
+        .first-row,
+        .second-row {
+            td {
+                border-bottom: solid 2px $main-color;
+            }
+        }
+        .checker-left {
+            border-right: solid 2px $main-color;
+            padding-right: 2px;
+        }
+        .checker-right {
+            border-left: solid 2px $main-color;
+            padding-left: 2px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    $checkerboard-width: 360px;
+    .container {
+        .title {
+            font-size: 2em;
+            margin: 1em;
+        }
+        .checkerboard {
+            @include setSquare($checkerboard-width);
+            .checker {
+                @include setSquare($checkerboard-width / 3);
+            }
+        }
+    }
+}
