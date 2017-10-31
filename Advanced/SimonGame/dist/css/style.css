@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box; }
+
+body button {
+  border: none;
+  background: no-repeat;
+  outline: none; }
+
+body .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  body .container .chassis {
+    width: 480px;
+    height: 480px;
+    background: #333333;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 0 20px #333333; }
+    body .container .chassis .green {
+      width: 200px;
+      height: 200px;
+      background-color: #33CC66;
+      border-radius: 100% 0 0 0;
+      position: absolute;
+      top: 30px;
+      left: 30px; }
+    body .container .chassis .green:active, body .container .chassis .green-light {
+      background: #66FF66;
+      box-shadow: 0 0 40px #66FF66; }
+    body .container .chassis .red {
+      width: 200px;
+      height: 200px;
+      background-color: #CC0000;
+      border-radius: 0 100% 0 0;
+      position: absolute;
+      top: 30px;
+      right: 30px; }
+    body .container .chassis .red:active, body .container .chassis .red-light {
+      background: #FF3300;
+      box-shadow: 0 0 40px #FF3300; }
+    body .container .chassis .yellow {
+      width: 200px;
+      height: 200px;
+      background-color: #CCCC00;
+      border-radius: 0 0 0 100%;
+      position: absolute;
+      bottom: 30px;
+      left: 30px; }
+    body .container .chassis .yellow:active, body .container .chassis .yellow-light {
+      background: #CCFF00;
+      box-shadow: 0 0 40px #CCFF00; }
+    body .container .chassis .blue {
+      width: 200px;
+      height: 200px;
+      background-color: #0066CC;
+      border-radius: 0 0 100% 0;
+      position: absolute;
+      bottom: 30px;
+      right: 30px; }
+    body .container .chassis .blue:active, body .container .chassis .blue-light {
+      background: #0066FF;
+      box-shadow: 0 0 40px #0066FF; }
+    body .container .chassis .screen {
+      width: 160px;
+      height: 160px;
+      background: #333333;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      body .container .chassis .screen .screen-inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 120px;
+        height: 120px;
+        background: #CCCCCC;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 120px;
+        font-size: 24px;
+        font-weight: 600;
+        color: #333333; }
+  body .container .controller {
+    position: relative; }
+    body .container .controller button {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      box-shadow: 0 0 20px #333333;
+      background: #333333;
+      color: #CCCCCC;
+      font-size: 16px;
+      margin-bottom: 24px; }
+      body .container .controller button:active {
+        background: #CCCCCC;
+        box-shadow: 0 0 20px #CCCCCC;
+        color: #333333; }
+    body .container .controller .start {
+      position: absolute;
+      top: -80px;
+      left: 40px; }
+    body .container .controller .strict {
+      position: absolute;
+      top: -80px;
+      right: 40px; }
+    body .container .controller .active {
+      background: #CCCCCC;
+      box-shadow: 0 0 20px #CCCCCC;
+      color: #333333; }

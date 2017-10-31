@@ -1,0 +1,139 @@
+@mixin center() {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    button {
+        border: none;
+        background: no-repeat;
+        outline: none;
+    }
+    .container {
+        $color-chassis: #333333;
+        $chassis-width: 480px;
+        $screen-width: 160px;
+        $screen-inner-width: 120px;
+        $block-width: 200px;
+        $block-margin: 30px;
+        @include center();
+        .chassis {
+            width: $chassis-width;
+            height: $chassis-width;
+            background: $color-chassis;
+            border-radius: 50%;
+            position: relative;
+            box-shadow: 0 0 20px $color-chassis;
+            .green {
+                width: $block-width;
+                height: $block-width;
+                background-color: #33CC66;
+                border-radius: 100% 0 0 0;
+                position: absolute;
+                top: $block-margin;
+                left: $block-margin;
+            }
+            .green:active, .green-light {
+                background: #66FF66;
+                box-shadow: 0 0 40px #66FF66;
+            }
+            .red {
+                width: $block-width;
+                height: $block-width;
+                background-color: #CC0000;
+                border-radius: 0 100% 0 0;
+                position: absolute;
+                top: $block-margin;
+                right: $block-margin;
+            }
+            .red:active, .red-light {
+                background: #FF3300;
+                box-shadow: 0 0 40px #FF3300;
+            }
+            .yellow {
+                width: $block-width;
+                height: $block-width;
+                background-color: #CCCC00;
+                border-radius: 0 0 0 100%;
+                position: absolute;
+                bottom: $block-margin;
+                left: $block-margin;
+            }
+            .yellow:active, .yellow-light {
+                background: #CCFF00;
+                box-shadow: 0 0 40px #CCFF00;
+            }
+            .blue {
+                width: $block-width;
+                height: $block-width;
+                background-color: #0066CC;
+                border-radius: 0 0 100% 0;
+                position: absolute;
+                bottom: $block-margin;
+                right: $block-margin;
+            }
+            .blue:active, .blue-light {
+                background: #0066FF;
+                box-shadow: 0 0 40px #0066FF;
+            }
+            .screen {
+                width: $screen-width;
+                height: $screen-width;
+                background: $color-chassis;
+                border-radius: 50%;
+                @include center();
+                .screen-inner {
+                    @include center();
+                    width: $screen-inner-width;
+                    height: $screen-inner-width;
+                    background: #CCCCCC;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: $screen-inner-width;
+                    font-size: 24px;
+                    font-weight: 600;
+                    color: $color-chassis;
+                }
+            }
+        }
+        .controller {
+            position: relative;
+            button {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                box-shadow: 0 0 20px $color-chassis;
+                background: $color-chassis;
+                color: #CCCCCC;
+                font-size: 16px;
+                margin-bottom: 24px;
+                &:active {
+                    background: #CCCCCC;
+                    box-shadow: 0 0 20px #CCCCCC;
+                    color: $color-chassis;
+                }
+            }
+            .start {
+                position: absolute;
+                top: -80px;
+                left: 40px;
+            }
+            .strict {
+                position: absolute;
+                top: -80px;
+                right: 40px;
+            }
+            .active {
+                background: #CCCCCC;
+                box-shadow: 0 0 20px #CCCCCC;
+                color: $color-chassis;
+            }
+        }
+    }
+}
